@@ -1,0 +1,19 @@
+{
+  "name": "cohort4labano",
+  "version": "1.0.0",
+  "description": "this folder will comtain a tutorial api server",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "klaus dev",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1"
+  }
+}
