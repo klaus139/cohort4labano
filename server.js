@@ -1,6 +1,7 @@
-import express from 'express';
+import express, { urlencoded } from 'express';
 import dotenv from 'dotenv';
 import connectDb from './config/db.js';
+import cookieParser from 'cookie-parser';
 
 dotenv.config();
 
@@ -10,6 +11,11 @@ connectDb();
 import userRoutes from './routes/user-routes.js';
 
 const app = express();
+
+//middleware
+app.use(express.json());
+app.use(urlencoded({extended:false}));
+app.use(cookieParser());
 
 const Port = process.env.PORT;
 
